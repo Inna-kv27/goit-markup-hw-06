@@ -423,26 +423,40 @@ img {
     background-image: linear-gradient( 
     rgba(46, 47, 66, 0.70),
     rgba(46, 47, 66, 0.70)), 
-    url(../images/fon1.jpg);
-    max-width: 1440px;
+    url(../images/dark-mob.jpg);
+    max-width: 320px;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-    padding: 188px 0;
+    /* padding: 188px 0; */
 }
 
+@media screen and (min-resolution: 2dppx), 
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    .one {
+        background-image: linear-gradient( 
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)), 
+        url(../images/dark-mob-2x.jpg);
+    }
+}
+
+.one > .container {
+    padding: 72px 52px;
+}
 
 .one-title {
     color: #FFF;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07; 
+    line-height: 1.1; 
     letter-spacing: 0.02em;
-    max-width: 496px;
-    margin: 0 auto 48px;
+    /* max-width: 496px; */
+    margin: 0 auto 72px;
 }
 
 .one-button {
@@ -452,7 +466,7 @@ img {
     padding: 16px 32px;
     align-items: flex-start;
     justify-content: center;
-    gap: 10px;
+    /* gap: 10px; */
     border-radius: 4px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -471,6 +485,73 @@ img {
     background-color: #404BBF;
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .one > .container {
+        padding: 112px 136px;
+    }
+
+    .one {
+        max-width: 768px;
+        background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)), 
+    url(../images/dark-tab.jpg);
+    }
+
+    @media screen and (min-resolution: 2dppx), 
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        .one {
+            background-image: linear-gradient( 
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), 
+            url(../images/dark-tab-2x.jpg);
+        }
+    }
+
+
+    .one-title {
+        font-size: 56px;
+        line-height: 1.07; 
+        max-width: 496px;
+        margin: 0 auto 36px;
+    }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .one > .container {
+        padding: 188px 0;
+    }
+
+    .one {
+        max-width: 1440px;
+        background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.70),
+    rgba(46, 47, 66, 0.70)), 
+    url(../images/fon1.jpg);
+    }
+
+    @media screen and (min-resolution: 2dppx), 
+    (min-resolution: 192dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+        .one {
+            background-image: linear-gradient( 
+            rgba(46, 47, 66, 0.70),
+            rgba(46, 47, 66, 0.70)), 
+            url(../images/people-office-2x.jpg);
+        }
+    }
+
+
+    .one-title {
+        margin: 0 auto 48px;
+    }
+
 }
 
 /*? ------------------TWO---------------- */
@@ -848,14 +929,11 @@ img {
 .footer {
     background-color: #2E2F42;
     /* padding: 100px 0 100px; */
-    /* padding: 96px 16px; */
+    padding: 96px 0;
     display: flex;
     flex-wrap: wrap;
-    max-width: 288px;
-    /* align-items: center;
-    justify-content: center; */
-
 }
+
 
 .end {
     display: flex;
@@ -1024,6 +1102,12 @@ img {
 
 }
 
+@media screen and (min-width: 768px) {
+    
+}
+
+@media screen and (min-width: 1158px) {
+}
 
 /*?-------------------BACKDROP------------*/
 
