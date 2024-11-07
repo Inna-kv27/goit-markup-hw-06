@@ -928,24 +928,19 @@ img {
 
 .footer {
     background-color: #2E2F42;
-    /* padding: 100px 0 100px; */
     padding: 96px 0;
     display: flex;
-    flex-wrap: wrap;
 }
 
 
 .end {
     display: flex;
     flex-wrap: wrap;
-    /* align-items: baseline; */
     align-items: center;
     justify-content: center;
 }
 
 .footer-log {
-    /* margin-right: 120px; */
-
 }
 
 .footer-logo {
@@ -970,7 +965,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* max-width: 264px;    */
     width: 100%;
     margin-bottom: 72px;
 }
@@ -978,7 +972,6 @@ img {
 .footer-media {    
     text-align: center;
     margin-bottom: 72px;
-    /* margin-right: 80px; */
 }
 .media-name {
     color: #FFF;
@@ -991,7 +984,6 @@ img {
 
 .media-list {
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
     gap: 16px;
@@ -1101,21 +1093,20 @@ img {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 1158px) {
-    .footer-container {
-        width: 584px;
+/* @media screen and (min-width: 768px) and (max-width: 1158px) {
+    .end {
+        max-width: 584px;
     }
-}
+} */
 
 @media screen and (min-width: 768px) {
     .end {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .footer-logo, .footer-media {
         align-items: flex-start;
         justify-content: flex-start;
+        max-width: 584px;
+    }
+
+    .footer-logo {
         text-align: start;
     }
     .footer-text {
@@ -1125,10 +1116,12 @@ img {
     .footer-media {
         margin-right: 0;
         margin-left: 24px;
+        margin-bottom: 104px;
+        text-align: start;
     }
 
     .media-list {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
     .footer-subscribe {
@@ -1154,10 +1147,32 @@ img {
     .footer-form-btn {
         margin: 0;
     }
-   
+
 }
 
 @media screen and (min-width: 1158px) {
+    .footer {
+        padding: 100px 0 100px;
+    }
+
+    .end {
+        max-width: 1158px;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+    .footer-log {
+        margin-right: 120px;
+    }
+
+    .footer-text{
+        margin-bottom: 0;
+    }
+
+    .footer-media {    
+        margin-right: 80px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 }
 
 /*?-------------------BACKDROP------------*/
