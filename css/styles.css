@@ -1310,17 +1310,26 @@ img {
 .modal-text:hover {
     border-color: #4D5AE5; 
 }
+
+/*  */
 .modal-check {
     margin-bottom: 24px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .check-text {
     color: #8E8F99;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: flex;
     align-items: center;
 }
+
+.check-policy {
+    flex-shrink: 0;
+}
+
 .check-text-policy {
     color: #4D5AE5;
     text-decoration: underline;
@@ -1348,6 +1357,7 @@ img {
     fill: #F4F4FD;
 }
 
+/*  */
 .modal-send {
     display: block;
     margin: 0 auto;
